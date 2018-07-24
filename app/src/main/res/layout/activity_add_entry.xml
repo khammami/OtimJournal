@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.otimware.myjournal.AddEntryActivity">
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <EditText
+        android:id="@+id/editTittle"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textDate"/>
+    <EditText
+        android:id="@+id/editThoughts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter your thoght and feelings..."
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTittle"/>
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Save"
+        app:layout_constraintTop_toBottomOf="@id/editThoughts"
+        app:layout_constraintRight_toRightOf="@id/editThoughts"/>
+
+</android.support.constraint.ConstraintLayout>
